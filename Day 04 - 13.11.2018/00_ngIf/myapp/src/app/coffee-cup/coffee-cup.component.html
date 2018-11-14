@@ -1,0 +1,17 @@
+
+
+<p *ngIf="getEnumContent(hotLevel)!='VERY_HOT'">
+  {{getEnumContent(hotLevel)}} Coffe number {{localConter}}
+</p>
+
+
+<p *ngIf="getEnumContent(hotLevel)=='VERY_HOT'"> 
+ sorry , I am to hot
+</p>
+
+
+
+<button (click)="changeTemp()">Change temp of coffee</button>
+
+
+<hr/>

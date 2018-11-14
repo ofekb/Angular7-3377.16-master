@@ -1,0 +1,31 @@
+<h1>Simple ngFor examples:</h1>
+<h2>ngIf is Great</h2>
+<ul>
+    <li *ngFor="let x of ['a','b','c']; let i=index">elemnt index {{i}} contains {{x}} </li>
+  </ul>
+  
+  
+  <ul>
+    <li *ngFor="let x of arr; let i=index">elemnt index {{i}} contains {{x}} </li>
+  </ul>
+  
+  
+  
+  <ul>
+    <li *ngFor="let x of arr2D; let i=index">elemnt index {{i}} contains {{x}} </li>
+  </ul>
+  
+  
+  
+  <ul>
+    <li *ngFor="let x of arr2D; let i=index">elemnt index {{i}} contains in first place {{x[0]}} </li>
+  </ul>
+  
+  
+  <ul>
+    <li *ngFor="let outer of arr2D; let i=index">elemnt index {{i}} contains:
+      <ol>
+        <li *ngFor="let inner of outer">{{inner}}</li>
+      </ol>
+    </li>
+  </ul>

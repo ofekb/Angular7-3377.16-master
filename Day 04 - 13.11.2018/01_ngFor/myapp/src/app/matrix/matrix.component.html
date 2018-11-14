@@ -1,0 +1,19 @@
+<h1>Matrix size {{num}}</h1>
+<h2>by ngIf</h2>
+<table border='1'>
+    <tr *ngFor="let outer of mat">
+        <td *ngFor="let inner of outer">{{convertToEnum(inner)}}</td>
+    </tr>
+  </table>
+  
+  
+  <button *ngIf="num<11" (click)="incMatrix(true)">increment matrix size</button>
+  <button *ngIf="num>3" (click)="incMatrix(false)">decrement matrix size</button>
+  <hr/>
+
+
+
+
+
+
+
